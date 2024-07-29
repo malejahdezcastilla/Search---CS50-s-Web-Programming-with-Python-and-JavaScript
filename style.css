@@ -1,0 +1,363 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.SearchBarContainer{
+    background-color: #fff;
+    display: flex;
+    justify-content: left;
+    flex: 100%;
+    color: #202124;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0 auto;
+    padding: 0 24px 0 8px;
+    min-height: 40px;
+    align-items: center;
+    max-width: 584px;
+    width: 100%;
+}
+.SearchBarContainer:hover {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: rgba(223, 225, 229, 0);  
+} 
+.SearchBarContainer:focus {
+    outline: 1px solid #dfe1e5;
+}
+.material-symbols-outlined {
+    display: block;
+    color: #9aa0a6;
+    font-size: 25px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.linksDiv {
+    display: flex;
+    color: rgba(0, 0, 0, 0.87);
+    align-items: self-end;
+    padding: 6px;
+    height: 48px;
+    justify-content: flex-end;
+}
+
+.linksDiv a[role="button"]{
+    color: rgba(0, 0, 0, 0.87);
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.logoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 198px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    min-height: 92;
+    max-height: 290px;
+    height: calc(100% - 560px);
+    width: auto;
+    object-position:center bottom;
+    object-fit: contain;
+}
+
+.logoDiv span{
+    position: relative;
+    left: 104px;
+    padding: 0;
+    bottom: 0;
+    top: -15px;
+    font: 15px roboto-regular, arial, sans-serif;
+    color: #4285f4;
+}
+
+.interactiveDiv {
+    display: block;
+    padding: 15px;
+    width: auto;
+    min-width: 470px;
+    max-height: 584px;
+    position: relative;
+}
+.interactiveDiv form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 14px;
+    margin: 0 auto;
+}
+
+.interactiveDiv input[type="text"] {
+    flex: 100%;
+    background: #fff;
+    color: #202124;
+    border: none;
+    margin: 0 auto;
+    padding: 8px 8px 8px 8px;
+    min-height: 40px;
+    max-width: 584px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.interactiveDiv input[type="text"]:hover {
+    display: flex;
+    background-color: #fff;
+    box-shadow: none;
+    border-color: rgba(223, 225, 229, 0);  
+} 
+
+.interactiveDiv input[type="text"]:focus {
+    outline: none;
+}   
+
+.interactiveDiv .ContainerSearchButtons button[type="submit"] {
+    background-color:#f8f9fa;
+    color:#3c4043;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    padding: 0 16px;
+    margin: 24px 8px 4px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    font-size: 14px;
+    user-select: none
+}
+
+.interactiveDiv .btn.btn-light:hover {
+    background-color:#f8f9fa ;
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}   
+
+.IconImageSearch {
+    border: none;
+    padding: 0;
+}
+
+.IconImageSearch .material-symbols-outlined{
+    color: #4285f4;
+    background-color: #fff;
+    border: none;
+}
+
+.IconImageSearch .material-symbols-outlined:focus-visible {
+    outline: none;
+}
+
+.LogoLinkDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+.LogoLinkDiv img {
+    height: 24px;
+    width: 74px;
+}
+
+.LogoLinkDiv .btn-link {
+    color: rgba(0, 0, 0, 0.87);
+    align-content: flex-end;
+    padding: 0;
+} 
+
+.HeaderDiv h1{
+    color: #d93025;
+    margin-left: 40px;
+    font-size: 20px;
+    padding: 20px 10px 0 10px;
+}
+
+.SeparatorDiv {
+    border-bottom: 1px solid #ebebeb;
+    padding: 8px;
+    display: block;
+}
+
+.FormDiv {
+    margin: 30px 2% 0 30px;
+    min-width: 200px;
+    max-width: 1100px;
+}
+
+.HeaderDiv2 {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding: 10px 10px 20px 10px;
+    color: #333;
+}
+
+.HeaderDiv2 h2 {
+    width: 16%;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.HeaderDiv2 h3 {
+    width: 33%;
+    font-size: 16px;
+}
+
+.HeaderDiv2 div{
+    width: 46%;
+}
+
+@media (max-width: 900px) {
+    h3 {
+    display: none;
+    }
+}
+.TextAndOptionFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.TextAndOptionFields .mb-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.mb-3 h4{   
+    font-size: 16px;
+    text-align: left;
+    width: 20%;
+    vertical-align: middle;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.TextBox {
+    text-align: left;
+    font-size: 13px;
+    height: 30px;
+    width: 100%;
+    padding: 1px 8px;
+    resize: inherit;
+    border: 1px solid #d9d9d9;
+    border-radius: 1px;
+    vertical-align: middle;
+}
+
+.TextBox:focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+.ContainTextBox {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.ContainTextBox label {
+    margin: 5px;
+}
+
+
+.form-select {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    width: 100%;
+    padding: 1px 8px;
+    resize: inherit;
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    color: #444;
+    border-radius: 2px;
+    vertical-align: middle; 
+}
+
+.form-select:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f8f8;
+    border-color: #c6c6c6;
+    color: #333;
+}
+
+.form-select:focus-visible {
+    border: none;
+    outline: none;
+}
+
+
+@media (max-width: 900px) {
+    .instruction-two-container {
+        display: none;
+    }
+}
+
+.ContainerButton {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.ContainerButton button[type="submit"] {
+    background-color: #4d90fe;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    line-height: 100%;
+    height: 36px;
+    min-width: 54px;
+    font-size: 11px;
+}
+
+.ContainerButton button[type="submit"]:hover {
+    background-color: #357ae8;
+    border: 1px solid #2f5bb7;
+}
+
+.instruction-container {
+    min-width: 167px;
+}
+.instruction-one-container {
+    width: 16%;
+    font-size: 14px;
+}
+.instruction-two-container {
+    flex: 0 0 auto;
+    width: 33%;
+    margin: 20px;
+    font-size: 11px;
+}
